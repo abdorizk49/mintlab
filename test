@@ -1,0 +1,8 @@
+
+  "homepage": "https://abdorizk49.github.io/mintlab1.0.0",
+
+  
+  "predeploy" : "npm run build",
+  "deploy" : "gh-pages -d build",
+
+  https://github.com/abdorizk49/mintlab

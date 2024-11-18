@@ -1,0 +1,40 @@
+
+.about{
+    .img-about{
+        margin-bottom: 36px;
+    }
+    .overlay-text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        // margin-bottom: 24px;
+        .text-about{
+            margin: 24px 0;
+            .body-text{
+                display: grid;
+                gap: 24px;
+            }
+            .foot-text{
+                margin-top: 24px;
+                // .btn-about{
+                //     color: $whiteColor;
+                //     &:hover{
+                //         border-color: $secondColor;
+                //         background-color: $secondColor;
+                //         box-shadow: $boxShadBlack;
+                //     }
+                // }
+            }
+        }
+    }
+    .about-item{
+        background-color: $thirdColor;
+        padding: 24px 24px 18px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+        .icon-item{
+            margin-bottom: 12px;
+        }
+    }
+}

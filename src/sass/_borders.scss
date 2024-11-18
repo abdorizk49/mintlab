@@ -1,0 +1,49 @@
+.animation-featured-borders div{
+    position: absolute;
+}
+.animation-featured-borders div:first-child {
+    left: 0;
+    top: 0;
+    animation: animated-border-top 5s linear infinite;
+    background-color: $secondColor;
+    transform-origin: left;
+    overflow: hidden;
+    height: 2px;
+    width: 100%;
+}
+.animation-featured-borders div:nth-child(2) {
+    right: 0;
+    top: 0;
+    animation: animated-border-right 5s linear infinite;
+    --tw-bg-opacity: 1;
+    background: $mainColor;
+    width: 2px;
+    height: 100%;
+}
+.animation-featured-borders div:nth-child(3) {
+    left: 0;
+    bottom: 0;
+    animation: animated-border-bottom 5s linear infinite;
+    background-color: $secondColor;
+    overflow: hidden;
+    height: 2px;
+    width: 100%;
+}
+.animation-featured-borders div:nth-child(4) {
+    left: 0;
+    top: 0;
+    animation: animated-border-left 5s linear infinite;
+    background: $mainColor;
+    width: 2px;
+    height: 100%;
+}
+.animation-featured-borders{
+    div{
+        opacity: 0;
+    }
+    &:hover{
+        div{
+            opacity: 1;
+        }
+    }
+}

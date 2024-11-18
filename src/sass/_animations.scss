@@ -1,0 +1,111 @@
+
+@keyframes animated-border-top {
+    0% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(100%)
+    }
+
+    50.0001% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform-origin: translateX(0)
+    }
+}
+@keyframes animated-border-top-gradient {
+    0% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(-100%)
+    }
+
+    50.0001% {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+@keyframes animated-border-right {
+    0% {
+        transform: scaleY(0);
+        transform-origin: top
+    }
+
+    50% {
+        transform: scaleY(1);
+        transform-origin: top
+    }
+
+    50.01% {
+        transform: scaleY(1);
+        transform-origin: bottom
+    }
+
+    to {
+        transform-origin: bottom;
+        transform: scaleY(0)
+    }
+}
+@keyframes animated-border-bottom {
+    0% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(-100%)
+    }
+
+    50.0001% {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+@keyframes animated-border-bottom-gradient {
+    0% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(100%)
+    }
+
+    50.0001% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+@keyframes animated-border-left {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom
+    }
+
+    50% {
+        transform: scaleY(1);
+        transform-origin: bottom
+    }
+
+    50.01% {
+        transform: scaleY(1);
+        transform-origin: top
+    }
+
+    to {
+        transform-origin: top;
+        transform: scaleY(0)
+    }
+}
