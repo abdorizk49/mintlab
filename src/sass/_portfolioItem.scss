@@ -1,0 +1,43 @@
+
+
+.portfolioItem{
+    .swiper{
+        margin-bottom: 36px;
+    }
+    .project-info{
+        margin-bottom: 24px;
+        .body-info{
+            .table{
+                tr{
+                    th{
+                        text-align: start;
+                        padding-left: 0;
+                        padding-right: 0;
+                        background-color: $thirdColor;
+                    }
+                    td{
+                        text-align: end;
+                        padding-left: 0;
+                        padding-right: 0;
+                        background-color: $thirdColor;
+                    }
+                    &:last-child{
+                        th,td{
+                            border-bottom-color: transparent;
+                        }
+                    }
+                }
+            }
+            .body-content{
+                margin-bottom: 24px;
+                p{
+                    font-size: 18px;
+                    color: $secondColor;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

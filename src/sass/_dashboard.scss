@@ -1,0 +1,265 @@
+
+
+.nav-link{
+    color: $whiteColor;
+    // background-image: linear-gradient(to right, #d4cfc9, #344754);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 6px 0;
+    border: 0;
+    position: relative;
+    text-transform: capitalize;
+    border-radius: 0;
+    &.logoutLink{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        span{
+            color: $secondColor;
+            transition: $trans;
+        }
+        &:hover{
+            span{
+                color: $blackColor;
+            }
+        }
+    }
+}
+
+.dashboard{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20%;
+    .sidbar{
+        width: 20%;
+        min-height: 100vh;
+        background: $mainColor;
+        padding: 36px 18px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        .sibar-content{
+            .logoImg{
+                margin-bottom: 12px;
+                img{
+                    max-height: 100%;
+                    // width: 140px;
+                    &:first-child{
+                        width: 0;
+                    }
+                }
+            }
+            .adminUpdate{
+                margin-bottom: 36px;
+                .nav-link{
+                    color: $whiteColor;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                }
+            }
+            .accordions{
+                .accordion{
+                    margin-bottom: 12px;
+                    .accordion-item{
+                        border: 0;
+                        background-color: transparent;
+                        .accordion-header{
+                            background-image: linear-gradient(to bottom right, $whiteColor, $whiteColor);
+                            -webkit-text-fill-color: $whiteColor;
+                            .accordion-button{
+                                justify-content: space-between;
+                                background-color: transparent;
+                                color: $whiteColor;
+                                padding: 0;
+                                border-radius: 0;
+                                box-shadow: none;
+                                outline: none;
+                                &:focus{
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                                &::after{
+                                    display: none;
+                                }
+                                svg{
+                                    transition: $trans;
+                                }
+                                &:not(.collapsed){
+                                    svg{
+                                        transform: rotateZ(180deg);
+                                    }
+                                }
+                                .text-icon{
+                                    text-transform: capitalize;
+                                    svg{
+                                        transform: none;
+                                        margin-right: 6px;
+                                    }
+                                }
+                            }
+                        }
+                        .accordion-collapse{
+                            padding: 12px;
+                            .accordion-body{
+                                padding: 0;
+                                .list-group{
+                                    gap: 12px;
+                                    .list-group-item{
+                                        background-color: transparent;
+                                        padding: 0;
+                                        border: 0;
+                                        .nav-link{
+                                            color: $thirdColor;
+                                            padding: 0;
+                                            text-transform: capitalize;
+                                            &:focus{
+                                                color: $secondColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .linksOut{
+                margin-bottom: 12px;
+                h2{
+                    line-height: 36px;
+                    background-image: linear-gradient(to bottom right, $whiteColor, $whiteColor);
+                    -webkit-text-fill-color: $whiteColor;
+                    .nav-link{
+                        color: $thirdColor;
+                        padding: 0;
+                        text-transform: capitalize;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 6px;
+                    }
+                }
+            }
+        }
+    }
+    .admin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        padding: 60px 0;
+        form{
+            .form-control,.form-select{
+                height: 50px;
+                font-size: 14px;
+                border: 0;
+                box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.07);
+                width: 100%;
+                &:focus{
+                    outline: 0;
+                    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.07);
+                }
+                &::placeholder{
+                    font-size: 14px;
+                }
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button{
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                &[type=file]{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+            small{
+                display: block;
+                text-align: end;
+                color: $secondColor!important;
+                margin: 5px 0;
+                width: 100%;
+            }
+            textarea.form-control{
+                height: auto;
+            }
+        }
+        &.logoUpdate{
+            .forms-content{
+                display: grid;
+                gap: 96px;
+            }
+        }
+        &.sliders{
+            display: block;
+            .head-section{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    .table-overlay{
+        overflow: hidden;
+        overflow-x: auto;
+        .table{
+            min-width: 1000px;
+            max-width: 1300px;
+            width: 100%;
+        }
+    }
+    .table{
+        tr{
+            th{
+                vertical-align: middle;
+                &:first-child{
+                    width: 4%;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+            }
+            td{
+                vertical-align: middle;
+            }
+            .btn-group{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                row-gap: 15px;
+                background: $mainColor;
+                border-radius: 6px!important;
+                overflow: hidden;
+                .btn{
+                    margin: 0;
+                    background: none;
+                    border-radius: 0 !important;
+                    &:hover{
+                        background: $whiteColor;
+                    }
+                }
+            }
+        }
+        &.all-portfolio{
+            .btn-group{
+                display: grid;
+                .btn{
+                    // border-radius: 6px!important;
+                    border-radius: 0 !important;
+                }
+            }
+        }
+    }
+}
